@@ -10,6 +10,7 @@ app.use(express.static(path.join(__dirname, "..", "public")));
 app.use(cors());
 app.use(volleyball);
 
+app.use("/api",require("./api"));
 app.use("*", (req, res) => {
   res.sendFile(path.join(__dirname, "../public/index.html"));
 });

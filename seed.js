@@ -1,6 +1,6 @@
 const { db } = require("./server/db");
 const { green, red } = require("chalk");
-
+const {Campuses, Students}= require("./server/db");
 // require your models here
 
 // DUMMY CAMPUS DATA
@@ -165,6 +165,12 @@ const seed = async () => {
     console.error(err);
     db.close();
   }
+};
+const campuslist= () =>{
+  return [...campuses];
+};
+const studentlist= () =>{
+  return [...student];
 };
 
 seed();
