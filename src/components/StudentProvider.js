@@ -18,7 +18,6 @@ export const useStudentContext = () => useContext(StudentContext);
 
 
 
-
 /* //import React from "react";
 import React, {useState, useContext, createContext} from 'react';
 const StudentContext=createContext();

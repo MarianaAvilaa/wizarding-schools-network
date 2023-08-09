@@ -4,6 +4,7 @@ import axios from 'axios';
 import { useStudentContext } from './StudentProvider';
 
 
+
 export default function  WizardStudents(){
     const {students,setStudents} = useStudentContext();
     useEffect(() =>{
@@ -20,7 +21,7 @@ export default function  WizardStudents(){
         <h1> Student List </h1>
         <ul>
         { students.map((studentss)=>(
-            <p>{studentss.name},{studentss.email}</p>
+            <p>{studentss.firstName},{studentss.email}</p>
         ))}
             </ul>
         </div>
