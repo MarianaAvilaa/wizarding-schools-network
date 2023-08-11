@@ -16,7 +16,7 @@ export default function  WizardSchool(){
             setCampuses(data);
         }
         fetchCampuses();
-    },[])
+    },[]);
 
     return(
         <div>
@@ -26,8 +26,9 @@ export default function  WizardSchool(){
             <p>{campusess.name}</p>
         ))}
             </ul>
+           
         </div>
     )
 
-    //Location is not showing up
+    //Location is not showing
 }

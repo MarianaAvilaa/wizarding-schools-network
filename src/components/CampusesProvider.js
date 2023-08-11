@@ -9,7 +9,7 @@ export function CampusProvider({ children }) {
   return (
     <CampusContext.Provider value={{ campuses, setCampuses , singleCampuses, setSingleCampuses}}>
       {children}
-    </CampusContext.Provider>
+    </CampusContext.Provider> 
   );
 }
 

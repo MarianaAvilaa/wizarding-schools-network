@@ -50,6 +50,28 @@ router.get("/campuses/:id",async(req,res,next)=>{
     
 });
 
+// Routes to add new campus and student
+
+router.post("/campuses",async (req, res,next)=>{
+try{
+    const campuse= await Campuses.create(req.body);
+    res.send(campuse);
+}catch(errr){
+    next(errr);
+}
+});
+
+router.post("/students",async(req,res,next)=>{
+try{
+    const student= await Students.create(req.body);
+    res.send(student);
+}catch(err){
+    next(err);
+}
+});
+
+
+
 
 
 module.exports = router;

@@ -5,6 +5,7 @@ function NavBar(){
     return(
         <nav>
             <Link to ="/wizarding-schools"> Wizard Schools</Link>
+           <p> </p>
             <Link to="/Students">Wizard Students</Link>
         </nav>
     );
