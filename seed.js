@@ -75,7 +75,7 @@ const students = [
     imageUrl: "https://i.ibb.co/tPqV51G/harry.webp",
     magicalAbilityScore:2.4,
     gpa: 3.5,
-    campusId: 1,
+    CampusId: 1,
   },
   {
     firstName: "Ronald",
@@ -84,7 +84,7 @@ const students = [
     imageUrl: "https://i.ibb.co/QmnT5fv/ron.jpg",
     magicalAbilityScore: 3.1,
     gpa: 2.7,
-    campusId: 1,
+    CampusId: 1,
   },
   {
     firstName: "Hermione",
@@ -93,7 +93,7 @@ const students = [
     imageUrl: "https://i.ibb.co/QdVQvYF/hermione-jpg.webp",
     magicalAbilityScore:3.5,
     gpa: 4.3,
-    campusId: 1,
+    CampusId: 1,
   },
   {
     firstName: "Dean",
@@ -102,7 +102,7 @@ const students = [
     imageUrl: "https://i.ibb.co/Z8wnwds/dean.jpg",
     magicalAbilityScore:2.2,
     gpa: 3.8,
-    campusId: 1,
+    CampusId: 1,
   },
   {
     firstName: "Padma",
@@ -111,7 +111,7 @@ const students = [
     imageUrl: "https://i.ibb.co/5BvhztF/padma.jpg",
     magicalAbilityScore: 1.4,
     gpa: 3.0,
-    campusId: 1,
+    CampusId: 1,
   },
   {
     firstName: "Ginny",
@@ -120,7 +120,7 @@ const students = [
     imageUrl: "https://i.ibb.co/yf6nwqj/ginny.jpg",
     magicalAbilityScore: 3.2,
     gpa: 3.9,
-    campusId: 1,
+    CampusId: 1,
   },
   {
     firstName: "Luna",
@@ -129,7 +129,7 @@ const students = [
     imageUrl: "https://i.ibb.co/mTsjh1W/Luna.webp",
     magicalAbilityScore: 2.5,
     gpa: 3.9,
-    campusId: 1,
+    CampusId: 1,
   },
   {
     firstName: "Viktor",
@@ -138,7 +138,7 @@ const students = [
     imageUrl: "https://i.ibb.co/c2WNq2D/krum.webp",
     magicalAbilityScore:3.8,
     gpa: 2.4,
-    campusId: 3,
+    CampusId: 3,
   },
   {
     firstName: "Fluer",
@@ -147,7 +147,7 @@ const students = [
     imageUrl: "https://i.ibb.co/c2WNq2D/krum.webp",
     magicalAbilityScore:1.5,
     gpa: 3.4,
-    campusId: 2,
+    CampusId: 2,
   },
 ];
 

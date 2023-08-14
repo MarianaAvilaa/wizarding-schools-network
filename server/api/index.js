@@ -44,10 +44,13 @@ router.get("/campuses/:id",async(req,res,next)=>{
             where:{id:req.params.id},
             include: Students,
         });
+        console.log(campuses);
         res.send(campuses);
     }catch(err){
+        console.log(err.message);
         next(err);
     }
+
     
 });
 

@@ -4,6 +4,7 @@ import Main from "./Main";
 import Campuses from "./Campuses";
 import Students from "./Students";
 import OneCampus from "./OneCampus";
+import OneStudent from "./OneStudent";
 import NavBar from "./NavBar";
 import { CampusProvider } from "./CampusesProvider";
 import { StudentProvider } from "./StudentProvider";
@@ -18,7 +19,8 @@ const Root = () => {
         <Route path="/" element={<Main />} />
         <Route path="/wizarding-schools" element ={<Campuses />} />
         <Route path="/Students" element ={<Students/>} />
-        <Route path="/wizarding-schools/:wizardingSchoolId" element={<OneCampus/>} />
+        <Route path="/wizarding-schools/:id" element={<OneCampus/>} />
+        <Route path= "/students/:id" element={<OneStudent/>} />
       </Routes>
       <StudentProvider/>
       <CampusProvider/>
