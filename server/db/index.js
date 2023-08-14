@@ -1,6 +1,7 @@
 "use strict";
 
 const {db,Sequelize} = require("./db");
+const{STRING,FLOAT,INTEGER}= require("sequelize");
 /* 
 name - not empty or null
 imageUrl - with a default value
@@ -20,7 +21,7 @@ const Campuses= db.define("Campuses",{
     type: Sequelize.STRING,
     allowNull:false,
   },
-  location:{
+  address:{
     type: Sequelize.STRING,
     allowNull:false,
   },
@@ -64,6 +65,7 @@ const Students= db.define("Student",{
   },
   magicalAbilityScore:{
   type:Sequelize.FLOAT,
+  allowNull: false,
   },
 
 });

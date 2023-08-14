@@ -5,9 +5,10 @@ const StudentContext = createContext();
 export function StudentProvider({ children }) {
   const [students, setStudents] = useState([]);
   const [singleStudent, setSingleStudent] = useState(null);
+  const [allStudents] = useState(null);
 
   return (
-    <StudentContext.Provider value={{ students, setStudents , singleStudent, setSingleStudent}}>
+    <StudentContext.Provider value={{ students, setStudents , singleStudent, setSingleStudent, allStudents}}>
       {children}
     </StudentContext.Provider>
   );
