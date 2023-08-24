@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 import axios from 'axios';
 import { useCampusContext } from './CampusesProvider';
 import { Link } from 'react-router-dom';
+import NewCampus from './forms/NewCampusForm';
 //import {newCampus} from "../forms/newCampusform";
 /* Write a component to display a list of all wizarding schools (at least their names and images)
 Write a context to manage wizarding schools in your application state
@@ -20,6 +21,11 @@ export default function  WizardSchool(){
         fetchCampuses();
     },[]);
 
+    const handleAddCampus= (newCampus) =>{
+        setCampuses((prevCampus)=>[...prevCampus,newCampus]);
+    };
+
+
     return(
         <div>
         <h1> Campsuses List </h1>
@@ -33,6 +39,8 @@ export default function  WizardSchool(){
         ))}
             </ul>
         <h2> Adding Another Campus</h2>
+        <NewCampus onAddCampus={handleAddCampus} />
+        
        
            
         </div>

@@ -13,13 +13,11 @@ const Campuses= db.define("Campuses",{
   name:{
     type:Sequelize.STRING,
     allowNull:false,
-    validate:{
-      notEmpty:true,
-    },
+   
   },
   imageUrl:{
     type: Sequelize.STRING,
-    allowNull:false,
+    
   },
   address:{
     type: Sequelize.STRING,

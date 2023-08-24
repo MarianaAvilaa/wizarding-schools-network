@@ -6,8 +6,11 @@ export function CampusProvider({ children }) {
   const [campuses, setCampuses] = useState([]);
   const [singleCampuses, setSingleCampuses] = useState(null);
 
+  const addCampus =(newCampus) => {
+    setCampuses((prevCampus) => [...prevCampus,newCampus]);
+  };
   return (
-    <CampusContext.Provider value={{ campuses, setCampuses , singleCampuses, setSingleCampuses}}>
+    <CampusContext.Provider value={{ campuses, setCampuses , singleCampuses, setSingleCampuses,addCampus}}>
       {children}
     </CampusContext.Provider> 
   );

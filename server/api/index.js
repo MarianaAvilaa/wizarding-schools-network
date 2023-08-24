@@ -58,8 +58,8 @@ router.get("/campuses/:id",async(req,res,next)=>{
 
 router.post("/campuses",async (req, res,next)=>{
 try{
-    const campuse= await Campuses.create(req.body);
-    res.send(campuse);
+    const campus= await Campuses.create(req.body);
+    res.send(campus);
 }catch(errr){
     next(errr);
 }
