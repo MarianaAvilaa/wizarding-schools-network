@@ -21,9 +21,6 @@ export default function  WizardSchool(){
         fetchCampuses();
     },[]);
 
-    const handleAddCampus= (newCampus) =>{
-        setCampuses((prevCampus)=>[...prevCampus,newCampus]);
-    };
 
 
     return(
@@ -39,7 +36,7 @@ export default function  WizardSchool(){
         ))}
             </ul>
         <h2> Adding Another Campus</h2>
-        <NewCampus onAddCampus={handleAddCampus} />
+        <NewCampus />
         
        
            

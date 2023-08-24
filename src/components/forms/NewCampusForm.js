@@ -16,7 +16,7 @@ export default function NewCampus(){
 
     const [name, setName]= useState("");
     const [address,setAddress]= useState("");
-    const {addCampus} = useCampusContext();
+    const {campuses, setCampuses}= useCampusContext();
 
     async function handleSubmit(event){
       event.preventDefault();
@@ -26,9 +26,11 @@ export default function NewCampus(){
                 name,
                 address,
             });
-            console.log(data);
-            addCampus(data);
-            console.log("Adding:");
+            console.log("data");
+            const newCampus= data.data;
+            setCampuses([...campuses,newCampus]);
+           
+
            
         }catch(err){
             console.error(err);
